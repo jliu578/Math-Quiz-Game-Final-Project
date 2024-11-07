@@ -20,7 +20,7 @@ public class LevelOne extends JFrame {
 
   public LevelOne(LevelSwitcher levelSwitcher) {
     this.levelSwitcher = levelSwitcher;
-    setTitle("MathsQ");
+    setTitle("Maths Multiple Choice Quiz - Level 1");
     setSize(400, 400);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setLayout(new BorderLayout());
@@ -104,5 +104,4 @@ public class LevelOne extends JFrame {
       }
     }
   }
-
 }

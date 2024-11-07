@@ -15,7 +15,7 @@ public class LevelTwo extends JFrame {
 
     public LevelTwo(LevelSwitcher levelSwitcher) {
         this.levelSwitcher = levelSwitcher;
-        setTitle("Level Two");
+        setTitle("Maths Multiple Choice Quiz - Level Two");
         setPreferredSize(new Dimension(400, 400));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());

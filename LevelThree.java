@@ -15,7 +15,7 @@ public class LevelThree extends JFrame {
 
     public LevelThree(LevelSwitcher levelSwitcher) {
         this.levelSwitcher = levelSwitcher;
-        setTitle("Level Three");
+        setTitle("Maths Multiple Choice Quiz - Level 3");
         setPreferredSize(new Dimension(400, 400));
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLayout(new BorderLayout());

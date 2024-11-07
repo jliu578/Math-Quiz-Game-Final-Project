@@ -21,7 +21,7 @@ public class LevelFour extends JFrame {
   ArrayList<String> answerChoice = new ArrayList<String>();
 
   public LevelFour(LevelSwitcher levelSwitcher) {
-    setTitle("Maths Quiz");
+    setTitle("Maths Multiple Choice Quiz - Level 4");
     setSize(400, 400);
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     setLayout(new BorderLayout());
