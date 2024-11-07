@@ -42,7 +42,6 @@ public class LevelOne extends JFrame {
     add(correctAnsLabel, BorderLayout.SOUTH);
     generateQuestions();
     generateNext();
-    // pack();
     setVisible(true);
   }
 
