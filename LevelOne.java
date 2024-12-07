@@ -13,6 +13,7 @@ public class LevelOne extends JFrame {
   private int correctAnswers = 0;
   private JLabel correctAnsLabel;
   private LevelSwitcher levelSwitcher;
+  private boolean next = false;
   
   ArrayList<String> questionList = new ArrayList<String>();
   ArrayList<String> answerList = new ArrayList<String>();
@@ -58,7 +59,7 @@ public class LevelOne extends JFrame {
     if (currentQuestionIndex < questions.size()) {
       currentQuestion = questions.get(currentQuestionIndex);
       questionLabel.setText(currentQuestion.showQuestion());
-      
+
       String[] choices = currentQuestion.showChoices();
       for (int i = 0; i < choices.length; i++) {
         answerButtons[i].setText(currentQuestion.choices[i]);
@@ -98,6 +99,11 @@ public class LevelOne extends JFrame {
       else if (currentQuestionIndex < questions.size()) {
         generateNext();
       }
+
+      else if (currentQuestionIndex == questions.size() && next == false) {
+        currentQuestionIndex = 0;
+        generateNext();
+      } 
 
       else {
         JOptionPane.showMessageDialog(LevelOne.this, "No more questions!");

@@ -60,11 +60,7 @@ public class LevelThree extends JFrame {
             for (int i = 0; i < 4; i++) {
                 answerButtons[i].setText(choices[i]);
             }
-        } else {
-            if (correctAnswers >= 3) {
-                levelSwitcher.startFour();
-            } 
-        }
+        } 
     }
 
     private class AnswerButtonListener implements ActionListener {
@@ -73,18 +69,29 @@ public class LevelThree extends JFrame {
             JButton source = (JButton) e.getSource();
             Question currentQuestion = questions.get(currentQuestionIndex);
             String correctAnswer = currentQuestion.showCorrectAns();
+    
             if (source.getText().equals(correctAnswer)) {
                 correctAnswers++;
                 JOptionPane.showMessageDialog(null, "Correct!");
-                correctAnswersLabel.setText("Correct Answers: " + correctAnswers);
             } else {
                 JOptionPane.showMessageDialog(null, "Incorrect!");
             }
+    
+            correctAnswersLabel.setText("Correct Answers: " + correctAnswers);
             currentQuestionIndex++;
-            showNextQuestion();
-
-            correctAnswersLabel.revalidate();
-            correctAnswersLabel.repaint();
+    
+            if (correctAnswers >= 3) {
+                JOptionPane.showMessageDialog(null, "You've advanced to the next level!");
+                levelSwitcher.startThree();
+                return; // Exit the current level
+            }
+    
+            if (currentQuestionIndex >= questions.size()) {
+                JOptionPane.showMessageDialog(null, "Quiz completed!");
+                currentQuestionIndex = 0; // Reset if needed
+            } else {
+                showNextQuestion();
+            }
         }
     }
 }
