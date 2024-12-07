@@ -3,8 +3,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.util.List;
-import java.util.Random;
 
 public class LevelFour extends JFrame {
   private JLabel questionLabel;
@@ -14,7 +12,6 @@ public class LevelFour extends JFrame {
   private ArrayList<Question> questions;
   private int correctAnswers = 0;
   private JLabel correctAnsLabel;
-  private LevelSwitcher levelSwitcher;
   
   ArrayList<String> questionList = new ArrayList<String>();
   ArrayList<String> answerList = new ArrayList<String>();

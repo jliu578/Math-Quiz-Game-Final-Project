@@ -12,7 +12,6 @@ public class LevelTwo extends JFrame {
     private int currentQuestionIndex;
     private int correctAnswers;
     private LevelSwitcher levelSwitcher;
-    private boolean next = false;
 
     public LevelTwo(LevelSwitcher levelSwitcher) {
         this.levelSwitcher = levelSwitcher;
