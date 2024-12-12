@@ -49,8 +49,8 @@ public class LevelFour extends JFrame {
 
   private void generateQuestions() {
     questions = new ArrayList<>();
-    questions.add(new Question("g(x) = (1 - sec x)/x, find g'(0).", new String[]{"0", "DNE", "1", "-1"}, "0"));
-    questions.add(new Question("h(x) = (1 - cos x)/x, find h'(0).", new String[] {"DNE", "0", "2", "-1"}, "0"));
+    questions.add(new Question("g(x) = (1 - sec x)/x, find g'(0).", new String[]{"0", "Do not exist", "1", "-1"}, "0"));
+    questions.add(new Question("h(x) = (1 - cos x)/x, find h'(0).", new String[] {"Do not exist", "0", "2", "-1"}, "0"));
     questions.add(new Question("f(x) = (sin x - x)/x^2, find f'(x).", new String[] {"1", "4", "2", "0"}, "0"));
   }
 

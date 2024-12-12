@@ -47,7 +47,7 @@ public class LevelThree extends JFrame {
         questions = new ArrayList<>();
         questions.add(new Question("Already know h(x) = x^3 + 3x^2 + 6x - 12, find h''(0). ", new String[]{"-12", "-6", "6", "4"}, "6"));
         questions.add(new Question("If cot θ = 3/4, find sec θ. ", new String[] {"3/4", "5/3", "3/5", "4/5"}, "5/3"));
-        questions.add(new Question("If sin θ = 1/2, find θ. ", new String[] {"-π/6", "-5π/6", "π/3", "π/6"}, "-5π/6, π/6"));
+        questions.add(new Question("If sin θ = 1/2, find θ. ", new String[] {"-π/6", "-5π/6", "π/3", "π/6"}, "π/6"));
     }
 
     private void showNextQuestion() {
