@@ -22,16 +22,16 @@ public class LevelThree extends JFrame {
 
         questionLabel = new JLabel("Question will appear here", SwingConstants.CENTER);
         add(questionLabel, BorderLayout.NORTH);
-        
+
         JPanel answersPanel = new JPanel(new GridLayout(2, 2));
         answerButtons = new JButton[4];
-        
+
         for (int i = 0; i < 4; i++) {
             answerButtons[i] = new JButton();
             answerButtons[i].addActionListener(new AnswerButtonListener());
             answersPanel.add(answerButtons[i]);
         }
-        
+
         add(answersPanel, BorderLayout.CENTER);
         correctAnswersLabel = new JLabel("Correct Answers: 0", SwingConstants.CENTER);
         add(correctAnswersLabel, BorderLayout.SOUTH);
@@ -85,7 +85,7 @@ public class LevelThree extends JFrame {
                 levelSwitcher.startThree();
                 return; // Exit the current level
             }
-    
+
             if (currentQuestionIndex >= questions.size()) {
                 JOptionPane.showMessageDialog(null, "Quiz completed!");
                 currentQuestionIndex = 0; // Reset if needed

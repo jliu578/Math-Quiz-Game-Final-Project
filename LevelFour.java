@@ -61,9 +61,7 @@ public class LevelFour extends JFrame {
       for (int i = 0; i < 4; i++) {
         answerButtons[i].setText(currentQuestion.showCorrectAns());
       }
-    }
-
-    else {
+    } else {
       JOptionPane.showMessageDialog(this, "Game Over!");
       System.exit(0);
     }
@@ -77,9 +75,7 @@ public class LevelFour extends JFrame {
       if (b1.getText().equals(currentQuestion.showCorrectAns())) {
         correctAnswers += 1;
         JOptionPane.showMessageDialog(null, "You are correct!");
-      }
-
-      else {
+      } else {
         JOptionPane.showMessageDialog(null, "You are wrong!");
       }
 

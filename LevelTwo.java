@@ -31,7 +31,7 @@ public class LevelTwo extends JFrame {
             answerButtons[i].addActionListener(new AnswerButtonListener());
             answersPanel.add(answerButtons[i]);
         }
-        
+
         add(answersPanel, BorderLayout.CENTER);
         correctAnswersLabel = new JLabel("Correct Answers: 0", SwingConstants.CENTER);
         add(correctAnswersLabel, BorderLayout.SOUTH);

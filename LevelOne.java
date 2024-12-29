@@ -64,9 +64,7 @@ public class LevelOne extends JFrame {
       for (int i = 0; i < choices.length; i++) {
         answerButtons[i].setText(currentQuestion.choices[i]);
       }
-    }
-
-    else {
+    } else {
       if (correctAnswers < 5) {
         JOptionPane.showMessageDialog(this, "No more questions!");
       }
@@ -84,9 +82,7 @@ public class LevelOne extends JFrame {
         correctAnswers += 1;
         JOptionPane.showMessageDialog(null, "You are correct!");
         correctAnsLabel.setText("Correct Answers: " + correctAnswers);
-      }
-
-      else {
+      } else {
         JOptionPane.showMessageDialog(null, "You are wrong!");
       }
 
